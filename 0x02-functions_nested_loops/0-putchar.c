@@ -1,5 +1,4 @@
 #include "main.h"
-
 /**
  * main - Entry point
  * Description: This program prints 'Main \n' to the console
