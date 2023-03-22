@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * print_alphabet
+ * print_alphabet from a to z
  * Description: a function that prints the alphabet,
  * in lowecase followed by a new line
  * Return: void
