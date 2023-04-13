@@ -9,7 +9,7 @@ void *malloc_checked(unsigned int b)
 {
 	void *str = malloc(b);
 
-	if (str == NULL)
+
 	           exit(98);
 
 	free (str);
