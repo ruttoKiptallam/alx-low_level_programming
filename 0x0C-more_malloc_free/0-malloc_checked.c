@@ -9,10 +9,10 @@
 void *malloc_checked(unsigned int b)
 {
 	int *str;
-         malloc_checked(sizeof(int) * 1024);
-
+	malloc_checked(sizeof(char) * 1024);
+          printf("%d\n", b);
         	           
 		exit(98);
 
-	free (str);
+	return (b);
 }	
