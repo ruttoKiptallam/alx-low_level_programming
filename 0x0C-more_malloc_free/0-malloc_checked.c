@@ -8,11 +8,10 @@
 
 void *malloc_checked(unsigned int b)
 {
-	int *str;
-	malloc_checked(sizeof(char) * 1024);
-          printf("%d\n", b);
-        	           
-		exit(98);
+	int *ptr;
 
-	return (b);
-}	
+	ptr = malloc(b);
+	if (ptr == NULL)
+		exit(98);
+	return (ptr);
+}

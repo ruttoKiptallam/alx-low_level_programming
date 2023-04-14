@@ -1,0 +1,18 @@
+#include <stdio.h>
+#include <stdlib.h>
+#iclude "main.h"
+
+/*
+ * returned pointer shall point to a newly allocated space in a memory
+ * newly allocated space contains s1 , followed by first n bytes of s2 , and null terminated
+ * If the function fails, it should return NULL
+ * If n is greater or equal to the length of s2 then use the entire string s2
+ * if NULL is passed, treat it as an empty string
+ */
+char *string_nconcat(char *s1, char *s2, unsigned int n);
+{
+	char *s1;
+	char *s2;
+	unsigned int *n;
+
+	if ()
