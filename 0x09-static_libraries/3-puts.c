@@ -1,4 +1,3 @@
-#include "main.h"
 #include <stdio.h>
 #include <stdlib.h>
 #include <ctype.h>
@@ -6,12 +5,12 @@
 
 void _puts(char *str)
 {
-	int i = '0';
+	int strlen = 0;
 
-	while (str[i])
+	while (str[strlen] != '\0')
 	{
-		_putchar(str ['i']);
-		i++;
+		putchar(str[strlen]);
+		strlen++;
 	}
-	_putchar('\n');
+	putchar('\n');
 }

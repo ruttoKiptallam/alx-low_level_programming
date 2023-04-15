@@ -1,11 +1,12 @@
+#include "main.h"
 #include <stdio.h>
+#include <stdlib.h>
+#include <ctype.h>
+#include <unistd.h>
+#include <string.h>
 
-int main () {
-   char ch;
-
-   for(ch = 'A' ; ch <= 'Z' ; ch++) {
-      putchar(ch);
-   }
-   
-   return(0);
+int _putchar(char c)
+{
+	return (write(1, &c, 1));
 }
+
