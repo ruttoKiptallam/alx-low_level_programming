@@ -5,12 +5,14 @@
 
 void _puts(char *str)
 {
-	int strlen = 0;
+   char str1[15];
+   char str2[15];
 
-	while (str[strlen] != '\0')
-	{
-		putchar(str[strlen]);
-		strlen++;
-	}
-	putchar('\n');
+   strcpy(str1, "tutorialspoint");
+   strcpy(str2, "compileonline");
+
+   puts(str1);
+   puts(str2);
+   
+   return(0);
 }
