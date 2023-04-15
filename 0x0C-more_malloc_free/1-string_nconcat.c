@@ -3,6 +3,7 @@
 #include "main.h"
 
 /*
+ * char *string_nconcat(char *s1, char *s2, unsigned int n);
  * returned pointer shall point to a newly allocated space in a memory
  * newly allocated space contains s1 , followed by first n bytes of s2 , and null terminated
  * If the function fails, it should return NULL
@@ -21,10 +22,9 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	if (s2 == NULL)
 		s2 = "";
 
-	for (len1 = 0; s1[len1] != '\0'; len1++)
-		;
-	for (len2 = 0; s2[len2] != '\0'; len2++)
-		;
+	for (len1 = 0; s1[len1] != '\0'; len1++);
+
+	for (len2 = 0; s2[len2] != '\0'; len2++);
 
 	if (sign >= len2)
 	{
