@@ -1,17 +1,24 @@
-#include <stdio.h>
+#ifndef STRUCTURES_H
+#define STRUCTURES_H
 /**
- * main - check the code
- *
- * Return: Always 0.
+ *  new type struct dog
+ * @name:char *
+ * @age:float
+ * @owner:char *
  */
-int main(void)
-{
-    struct dog; 
 
-    char name []= "Poppy";
-    float age = 3.5;
-     char owner [] = "Bob";
-    
-    printf("My name is %s, and I am %.1f :) - Woof!\n", name, age);
-    return (0);
-}
+struct dog
+{
+   char *name;
+   float age;
+   char *owner;    
+};
+/*dog_t -typedef for struct dog*/
+typedef struct dog dog_t;
+
+ void init_dog(struct dog *d, char *name, float age, char *owner);
+ void print_dog(struct dog *d);
+ dog_t *new_dog(char *name, float age, char *owner);
+ void free_dog(dog_t *d);
+
+#endif
