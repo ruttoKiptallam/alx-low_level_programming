@@ -1,10 +1,12 @@
 #ifndef STRUCTURES_H
 #define STRUCTURES_H
 /**
- *  new type struct dog
+ * new type struct dog
  * @name:char *
  * @age:float
  * @owner:char *
+ * description; headfile
+ *
  */
 
 struct dog
